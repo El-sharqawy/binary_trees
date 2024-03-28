@@ -80,6 +80,9 @@ size_t binary_tree_leaves(const binary_tree_t *tree);
 /* Count the nodes with at least 1 child in a binary tree */
 size_t binary_tree_nodes(const binary_tree_t *tree);
 
+/* Measure the balance factor of a binary tree */
+int binary_tree_balance(const binary_tree_t *tree);
+
 /*** End of Functions Declarations ***/
 
 #endif /* __BINARY_TREES_H__ */
