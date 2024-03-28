@@ -34,7 +34,7 @@ typedef struct binary_tree_s avl_t;
 /* Max Binary Heap */
 typedef struct binary_tree_s heap_t;
 
-/*** Functions Declaration ***/
+/*** Functions Declarations ***/
 
 /* Print Binary Tree */
 void binary_tree_print(const binary_tree_t *);
@@ -62,6 +62,9 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Going through binary tree using in-order traversal */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Going through binary tree using post-order traversal */
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
 /*** End of Functions Declarations ***/
 
