@@ -48,7 +48,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 /* Insert a node as the right-child of another node */
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 
-/* Delete an Entire Binary Tree */
+/* Delete an entire binary tree */
 void binary_tree_delete(binary_tree_t *tree);
 
 /* Check if a node is a leaf */
@@ -65,6 +65,9 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
 /* Going through binary tree using post-order traversal */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Measure the heigh of a binary tree */
+size_t binary_tree_height(const binary_tree_t *tree);
 
 /*** End of Functions Declarations ***/
 
