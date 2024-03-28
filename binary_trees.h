@@ -83,6 +83,9 @@ size_t binary_tree_nodes(const binary_tree_t *tree);
 /* Measure the balance factor of a binary tree */
 int binary_tree_balance(const binary_tree_t *tree);
 
+/* Check if a binary tree is full */
+int binary_tree_is_full(const binary_tree_t *tree);
+
 /*** End of Functions Declarations ***/
 
 #endif /* __BINARY_TREES_H__ */
