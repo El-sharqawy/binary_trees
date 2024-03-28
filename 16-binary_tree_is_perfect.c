@@ -12,7 +12,7 @@ int isPerfectTree(const binary_tree_t *tree, int expectedDepth)
 {
 	if (tree == NULL)
 	{
-		return (0 == expectedDepth);
+		return (expectedDepth == 0);
 	}
 
 	if (!tree->right != !tree->left)
@@ -30,10 +30,10 @@ int isPerfectTree(const binary_tree_t *tree, int expectedDepth)
  * @tree: Pointer to the root node of the tree to check.
  *
  * Return: Depth of the left nodes, otherwise 0.
- */ 
+ */
 int iDepthLeft(const binary_tree_t *tree)
 {
-	return tree == NULL ? 0 : 1 + iDepthLeft(tree->left);
+	return (tree == NULL ? 0 : 1 + iDepthLeft(tree->left));
 }
 
 /**
@@ -45,14 +45,14 @@ int iDepthLeft(const binary_tree_t *tree)
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
-        int iDepth = 0, isPerfect = 0;
+	int iDepth = 0, isPerfect = 0;
 
-        if (tree == NULL)
-        {
-                return (0);
-        }
+	if (tree == NULL)
+	{
+		return (0);
+	}
 
-        iDepth = iDepthLeft(tree);
-        isPerfect = isPerfectTree(tree, iDepth);
-        return (isPerfect);
+	iDepth = iDepthLeft(tree);
+	isPerfect = isPerfectTree(tree, iDepth);
+	return (isPerfect);
 }
