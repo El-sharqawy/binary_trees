@@ -86,6 +86,9 @@ int binary_tree_balance(const binary_tree_t *tree);
 /* Check if a binary tree is full */
 int binary_tree_is_full(const binary_tree_t *tree);
 
+/* Check if a binary tree is perfect */
+int binary_tree_is_perfect(const binary_tree_t *tree);
+
 /*** End of Functions Declarations ***/
 
 #endif /* __BINARY_TREES_H__ */
