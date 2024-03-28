@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -74,6 +73,9 @@ size_t binary_tree_depth(const binary_tree_t *tree);
 
 /* Measure the size of the binary tree */
 size_t binary_tree_size(const binary_tree_t *tree);
+
+/* Count the leaves in a binary tree */
+size_t binary_tree_leaves(const binary_tree_t *tree);
 
 /*** End of Functions Declarations ***/
 
